@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         ThemeSetup.applyPreferenceTheme(getApplicationContext());
         IdiomSetUp.applyPreferenceIdiom(getApplicationContext());
 
@@ -37,21 +36,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case (R.id.configuracion):
-                Intent intentPreferenciasActivity = new Intent(this, PreferenciasActivity.class);
-                startActivity(intentPreferenciasActivity);
-                return true;
-            case (R.id.exit):
-                finish();
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -59,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -74,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-     */
+
 
 
 

@@ -16,9 +16,7 @@ public class ContrasenyaActivity extends AppCompatActivity {
 
         actualizarContrasenya = findViewById(R.id.bttnActualizarContrasenya);
 
-        actualizarContrasenya.setOnClickListener(view -> {
-            finish();
-        });
+        actualizarContrasenya.setOnClickListener(view -> finish());
     }
 
 }

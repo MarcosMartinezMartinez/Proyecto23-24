@@ -15,7 +15,7 @@ import com.example.proyectocliente2324.base.Parameters;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MainActivity2 extends BaseActivity implements CallInterface {
+public class Example extends BaseActivity implements CallInterface {
 
     private TextView txtView ;
     private TextView textViewDay;
