@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities;
+package com.example.miravereda.activities;
 
 import android.os.Bundle;
 
@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.proyectocliente2324.API.Connector;
+import com.example.miravereda.API.Connector;
 
-import com.example.proyectocliente2324.activities.model.Root;
-import com.example.proyectocliente2324.base.BaseActivity;
-import com.example.proyectocliente2324.base.CallInterface;
+import com.example.miravereda.activities.model.Root;
+import com.example.miravereda.base.BaseActivity;
+import com.example.miravereda.base.CallInterface;
 
 import es.ieslavereda.miravereda.R;
 

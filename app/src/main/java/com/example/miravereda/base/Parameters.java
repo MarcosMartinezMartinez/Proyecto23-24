@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.base;
+package com.example.miravereda.base;
 
 public class Parameters {
 

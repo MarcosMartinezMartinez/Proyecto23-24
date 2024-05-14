@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities.model;
+package com.example.miravereda.activities.model;
 
 // Class obtained from https://json2csharp.com/code-converters/json-to-pojo
 // and modified by adding Serializable interface

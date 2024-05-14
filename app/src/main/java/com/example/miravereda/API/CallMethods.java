@@ -1,7 +1,7 @@
-package com.example.proyectocliente2324.API;
+package com.example.miravereda.API;
 
 
-import com.example.proyectocliente2324.base.Parameters;
+import com.example.miravereda.base.Parameters;
 
 import java.io.IOException;
 import okhttp3.RequestBody;

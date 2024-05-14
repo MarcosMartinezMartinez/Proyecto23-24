@@ -1,11 +1,11 @@
-package com.example.proyectocliente2324.base;
+package com.example.miravereda.base;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.ViewGroup;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.proyectocliente2324.API.Connector;
+import com.example.miravereda.API.Connector;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

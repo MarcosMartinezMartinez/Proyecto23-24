@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities;
+package com.example.miravereda.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.proyectocliente2324.activities.preferencias.IdiomSetUp;
-import com.example.proyectocliente2324.activities.preferencias.PreferenciasActivity;
-import com.example.proyectocliente2324.activities.preferencias.ThemeSetup;
+import com.example.miravereda.activities.preferencias.IdiomSetUp;
+import com.example.miravereda.activities.preferencias.PreferenciasActivity;
+import com.example.miravereda.activities.preferencias.ThemeSetup;
 
 import es.ieslavereda.miravereda.R;
 

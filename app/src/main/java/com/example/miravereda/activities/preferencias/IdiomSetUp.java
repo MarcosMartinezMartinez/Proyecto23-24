@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities.preferencias;
+package com.example.miravereda.activities.preferencias;
 
 import android.content.Context;
 import android.content.res.Configuration;

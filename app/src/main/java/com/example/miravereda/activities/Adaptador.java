@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities;
+package com.example.miravereda.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.proyectocliente2324.activities.model.Root;
+import com.example.miravereda.activities.model.Root;
 
 import es.ieslavereda.miravereda.R;
 
@@ -40,7 +40,12 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
 
         viewHolder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(view.getContext(), DetailsActivity.class);
+            intent.putExtra("root", root);
+            intent.putExtra("position", position);
 
+
+            view.getContext().startActivity(intent);
         });
     }
 

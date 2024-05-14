@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.API;
+package com.example.miravereda.API;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

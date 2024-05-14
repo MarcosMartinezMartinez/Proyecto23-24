@@ -1,4 +1,4 @@
-package com.example.proyectocliente2324.activities;
+package com.example.miravereda.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
