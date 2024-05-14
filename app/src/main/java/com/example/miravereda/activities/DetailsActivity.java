@@ -20,6 +20,7 @@ public class DetailsActivity extends AppCompatActivity {
     private TextView valoracion;
     private double auxiliar;
     private FloatingActionButton guardarValoracion;
+    private Button adquirir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class DetailsActivity extends AppCompatActivity {
         valoracion = findViewById(R.id.tvValoracionContenido);
         auxiliar = 5;
         guardarValoracion = findViewById(R.id.fabGuardar);
+        adquirir = findViewById(R.id.bttnAdquirir);
 
         btnRestar.setOnClickListener(view -> {
             if (auxiliar > 0) {
@@ -50,6 +52,11 @@ public class DetailsActivity extends AppCompatActivity {
             auxiliar = 5;
             valoracion.setText(String.valueOf(auxiliar));
             Toast.makeText(this, "Su valoración ha sido guardada correctamente", Toast.LENGTH_SHORT).show();
+        });
+
+        adquirir.setOnClickListener(view -> {
+            Toast.makeText(this, "Se ha añadido correctamente a la cesta", Toast.LENGTH_SHORT).show();
+            finish();
         });
     }
 }
