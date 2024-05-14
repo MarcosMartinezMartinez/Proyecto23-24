@@ -63,6 +63,19 @@
         app:layout_constraintTop_toTopOf="@+id/textViewPrecio" />
 
     <TextView
+        android:id="@+id/tvEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="€"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvNota"
+        app:layout_constraintStart_toEndOf="@+id/tvPrecio"
+        app:layout_constraintTop_toTopOf="@+id/tvPrecio" />
+
+    <TextView
         android:id="@+id/textViewNota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -146,7 +159,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="5"
+            android:text="5.0"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -176,7 +189,7 @@
         android:id="@+id/bttnAdquirir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#0D90F8"
         android:text="ADQUIRIR"
         app:layout_constraintEnd_toEndOf="@+id/fabGuardar"
