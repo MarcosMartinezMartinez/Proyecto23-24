@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyectocliente2324.API.Connector;
-import com.example.myweatherbase.R;
+
 import com.example.proyectocliente2324.activities.model.Root;
 import com.example.proyectocliente2324.base.BaseActivity;
 import com.example.proyectocliente2324.base.CallInterface;
+
+import es.ieslavereda.miravereda.R;
 
 public class RecyclerActivity extends BaseActivity implements CallInterface {
 
@@ -22,6 +24,7 @@ public class RecyclerActivity extends BaseActivity implements CallInterface {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
 
+        doInUI();
 
     }
 

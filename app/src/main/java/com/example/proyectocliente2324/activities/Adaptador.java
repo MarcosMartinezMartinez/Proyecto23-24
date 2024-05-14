@@ -11,13 +11,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myweatherbase.R;
 import com.example.proyectocliente2324.activities.model.Root;
-import com.example.proyectocliente2324.base.ImageDownloader;
-import com.example.proyectocliente2324.base.Parameters;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import es.ieslavereda.miravereda.R;
+
 
 public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
 
@@ -49,7 +46,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return root.list.size();
+        return 12;
     }
 
 

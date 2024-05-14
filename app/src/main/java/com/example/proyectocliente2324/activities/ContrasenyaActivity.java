@@ -3,7 +3,9 @@ package com.example.proyectocliente2324.activities;
 import android.os.Bundle;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myweatherbase.R;
+
+
+import es.ieslavereda.miravereda.R;
 
 public class ContrasenyaActivity extends AppCompatActivity {
 

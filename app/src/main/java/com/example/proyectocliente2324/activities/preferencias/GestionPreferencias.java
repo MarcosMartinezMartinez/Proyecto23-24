@@ -3,7 +3,9 @@ package com.example.proyectocliente2324.activities.preferencias;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import com.example.myweatherbase.R;
+
+import es.ieslavereda.miravereda.R;
+
 
 public class GestionPreferencias {
 

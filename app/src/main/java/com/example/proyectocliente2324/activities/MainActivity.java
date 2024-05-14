@@ -6,10 +6,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myweatherbase.R;
+
 import com.example.proyectocliente2324.activities.preferencias.IdiomSetUp;
 import com.example.proyectocliente2324.activities.preferencias.PreferenciasActivity;
 import com.example.proyectocliente2324.activities.preferencias.ThemeSetup;
+
+import es.ieslavereda.miravereda.R;
 
 public class MainActivity extends AppCompatActivity {
 

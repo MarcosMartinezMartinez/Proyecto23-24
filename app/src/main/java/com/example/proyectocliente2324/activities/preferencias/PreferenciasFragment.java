@@ -1,12 +1,13 @@
 package com.example.proyectocliente2324.activities.preferencias;
 
 import android.os.Bundle;
-import androidx.preference.EditTextPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceFragmentCompat;
-import com.example.myweatherbase.R;
+
 import java.util.Arrays;
 import java.util.List;
+
+import es.ieslavereda.miravereda.R;
 
 
 public class PreferenciasFragment extends PreferenceFragmentCompat {
