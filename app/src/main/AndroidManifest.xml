@@ -23,6 +23,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.example.proyectocliente2324.activities.ContrasenyaActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
