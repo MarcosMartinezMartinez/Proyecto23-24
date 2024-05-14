@@ -1,52 +1,66 @@
 package com.example.proyectocliente2324.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.example.proyectocliente2324.API.Connector;
+import android.view.Menu;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 import com.example.myweatherbase.R;
-import com.example.proyectocliente2324.activities.model.Root;
-import com.example.proyectocliente2324.base.BaseActivity;
-import com.example.proyectocliente2324.base.CallInterface;
-import com.example.proyectocliente2324.base.ImageDownloader;
-import com.example.proyectocliente2324.base.Parameters;
+import com.example.proyectocliente2324.activities.preferencias.IdiomSetUp;
+import com.example.proyectocliente2324.activities.preferencias.ThemeSetup;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+public class MainActivity extends AppCompatActivity {
 
-public class MainActivity extends BaseActivity implements CallInterface {
+    private Button crearCuenta;
+    private Button recordarContrasenya;
 
-    private TextView txtView ;
-    private TextView textViewDay;
-    private TextView textViewDayOfWeek;
-    private ImageView imageView;
-    private Root root;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
+        ThemeSetup.applyPreferenceTheme(getApplicationContext());
+        IdiomSetUp.applyPreferenceIdiom(getApplicationContext());
+
+        crearCuenta= findViewById(R.id.bttnCrearCuenta);
+        recordarContrasenya = findViewById(R.id.bttnRecordarContrasenya);
+
+        recordarContrasenya.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ContrasenyaActivity.class);
+            startActivity(intent);
+        });
+
+
     }
 
-    // Realizamos la llamada y recogemos los datos en un objeto Root
+
     @Override
-    public void doInBackground() {
-        root = Connector.getConector().get(Root.class,"&lat=39.5862518&lon=-0.5411163");
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
-    // Una vez ya se ha realizado la llamada, ocultamos la barra de progreso y presentamos los datos
+
+
+    /*
     @Override
-    public void doInUI() {
-        hideProgress();
-        txtView.setText(root.list.get(0).weather.get(0).description);
-        ImageDownloader.downloadImage(Parameters.ICON_URL_PRE + root.list.get(0).weather.get(0).icon + Parameters.ICON_URL_POST, imageView);
-
-        Date date = new Date((long)root.list.get(0).dt*1000);
-        SimpleDateFormat dateDayOfWeek = new SimpleDateFormat("E");
-        SimpleDateFormat dateDay = new SimpleDateFormat("EEE, d MMM yyyy HH:mm");
-        textViewDayOfWeek.setText(dateDayOfWeek.format(date));
-        textViewDay.setText(dateDay.format(date));
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case (R.id.configuracion):
+                Intent intentPreferenciasActivity = new Intent(this, PreferenciasActivity.class);
+                startActivity(intentPreferenciasActivity);
+                return true;
+            case (R.id.exit):
+                finish();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
+
+     */
+
+
+
+
 }

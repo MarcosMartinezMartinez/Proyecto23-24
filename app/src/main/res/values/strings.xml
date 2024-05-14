@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MyWeatherBase</string>
+    <string name="settings_theme_key">Theme</string>
+    <string name="standard">Estándar</string>
+    <string name="metric">Métrica</string>
+    <string name="imperial">Imperial</string>
+    <string name="spanish">Español</string>
+    <string name="english">English</string>
+    <string name="currently">Actualmente </string>
+    <string name="settings">Settings</string>
+    <string name="settings_theme_title">Tema para la aplicación</string>
+    <string name="settings_theme_dialog_title">Select the mode for the app</string>
+    <string name="default_string">System default</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="exit">Exit</string>
+
+
+    <string name="settings_idiom_key">Languaje</string>
+    <string name="espanyol">Español</string>
+    <string name="ingles">Inglés</string>
 </resources>

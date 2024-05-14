@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidades_entries">
+        <item>@string/standard</item>
+        <item>@string/metric</item>
+        <item>@string/imperial</item>
+    </string-array>
+    <string-array name="unidades_values">
+        <item>standard</item>
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+    <string-array name="settings_theme_entries">
+        <item>@string/default_string</item>
+        <item>@string/light</item>
+        <item>@string/dark</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>DEFAULT</item>
+        <item>LIGHT</item>
+        <item>DARK</item>
+    </string-array>
+
+
+
+    <string-array name="idiom_entries">
+        <item>@string/espanyol</item>
+        <item>@string/ingles</item>
+    </string-array>
+
+    <string-array name="idiom_values">
+        <item>ESPANYOL</item>
+        <item>INGLES</item>
+        <item>ITALIANO</item>
+    </string-array>
+</resources>

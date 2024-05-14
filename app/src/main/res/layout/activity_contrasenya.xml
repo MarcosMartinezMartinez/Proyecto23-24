@@ -2,32 +2,47 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E8E7E7"
-    tools:context=".all.activities.MainActivity">
+    android:background="#E8E7E7">
 
-    <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="312dp"
-        android:layout_height="312dp"
+    <TextView
+        android:id="@+id/tvTituloActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="A C T U A L I Z A R   C O N T R A S E Ñ A"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_logo_foreground" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLinea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="______________________________________________________________"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTituloActualizar"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloActualizar" />
 
     <EditText
         android:id="@+id/txtUsuario"
         android:layout_width="248dp"
         android:layout_height="48dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="Introduzca usuario"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLinea" />
 
     <EditText
         android:id="@+id/txtContrasenya"
@@ -35,34 +50,23 @@
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Introduzaca contraseña"
+        android:hint="Actualice la contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/txtUsuario"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <Button
-        android:id="@+id/bttnCrearCuenta"
-        android:layout_width="152dp"
+        android:id="@+id/bttnActualizarContrasenya"
+        android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="#74B529"
-        android:text="Crear cuenta"
+        android:text="Actualizar contraseña"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/txtContrasenya"
         app:layout_constraintStart_toStartOf="@+id/txtContrasenya"
         app:layout_constraintTop_toBottomOf="@+id/txtContrasenya" />
-
-    <Button
-        android:id="@+id/bttnRecordarContrasenya"
-        android:layout_width="248dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="#B5B2B2"
-        android:text="Olvidaste la contraseña?"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/bttnCrearCuenta"
-        app:layout_constraintStart_toStartOf="@+id/bttnCrearCuenta"
-        app:layout_constraintTop_toBottomOf="@+id/bttnCrearCuenta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

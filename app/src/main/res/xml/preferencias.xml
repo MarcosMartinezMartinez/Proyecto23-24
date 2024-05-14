@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="standard"
+            android:entries="@array/unidades_entries"
+            android:entryValues="@array/unidades_values"
+            android:key="unidades"
+            android:summary="Unidades en"
+            android:title="Unidades" />
+        <ListPreference
+            android:defaultValue="espanyol"
+            android:entries="@array/idiom_entries"
+            android:entryValues="@array/idiom_values"
+            android:key="lenguaje"
+            android:summary="Español"
+            android:title="Lenguaje" />
+
+        <EditTextPreference
+            android:key="api"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:title="Modificar clave API"
+            app:enabled="false"
+            app:shouldDisableView="false" />
+
+        <PreferenceCategory android:title="Pantalla">
+            <androidx.preference.ListPreference
+                android:dialogTitle="@string/settings_theme_dialog_title"
+                android:entries="@array/settings_theme_entries"
+                android:entryValues="@array/settings_theme_values"
+                android:key="@string/settings_theme_key"
+                android:title="@string/settings_theme_title" />
+        </PreferenceCategory>
+
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>
