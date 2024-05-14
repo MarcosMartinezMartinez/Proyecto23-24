@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        crearCuenta.setOnClickListener(view -> {
+            Intent intent = new Intent(this, RecyclerActivity.class);
+            startActivity(intent);
+        });
+
 
     }
 

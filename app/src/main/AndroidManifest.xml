@@ -30,6 +30,10 @@
         <activity
             android:name="com.example.proyectocliente2324.activities.preferencias.PreferenciasActivity">
         </activity>
+
+        <activity
+            android:name="com.example.proyectocliente2324.activities.RecyclerActivity">
+        </activity>
     </application>
 
 </manifest>
