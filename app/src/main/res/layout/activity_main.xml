@@ -46,7 +46,7 @@
         android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:backgroundTint="#74B529"
+        android:backgroundTint="#0D90F8"
         android:text="Crear cuenta"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/txtContrasenya"

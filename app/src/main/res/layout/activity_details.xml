@@ -3,15 +3,184 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E8E7E7">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="224dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/iContenidoDetalle"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Titulo"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/iContenidoDetalle"
+        app:layout_constraintStart_toStartOf="@+id/iContenidoDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/iContenidoDetalle" />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/textViewPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Precio:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/iContenidoDetalle"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutor" />
+
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="precio"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPrecio"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrecio"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrecio" />
+
+    <TextView
+        android:id="@+id/textViewNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewPrecio"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrecio" />
+
+    <TextView
+        android:id="@+id/tvNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="nota"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNotaMedia"
+        app:layout_constraintStart_toEndOf="@+id/textViewNota"
+        app:layout_constraintTop_toTopOf="@+id/textViewNota" />
+
+    <TextView
+        android:id="@+id/textViewNotaMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota media:"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/textViewNota"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="nota media"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewNotaMedia"
+        app:layout_constraintStart_toEndOf="@+id/textViewNotaMedia"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNota" />
+
+    <TextView
+        android:id="@+id/textViewValoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Danos tu valoración"
+        android:textAlignment="center"
+        android:textColor="#9E9D9D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracion">
+
+        <Button
+            android:id="@+id/bttnMenos"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#F40808"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvValoracionContenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bttnMas"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#71D003"
+            android:text="+"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:backgroundTint="#FBFBFB"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <Button
+        android:id="@+id/bttnAdquirir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#0D90F8"
+        android:text="ADQUIRIR"
+        app:layout_constraintEnd_toEndOf="@+id/fabGuardar"
+        app:layout_constraintStart_toStartOf="@+id/fabGuardar"
+        app:layout_constraintTop_toBottomOf="@+id/fabGuardar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

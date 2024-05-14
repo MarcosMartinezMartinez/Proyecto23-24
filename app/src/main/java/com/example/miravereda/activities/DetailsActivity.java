@@ -8,6 +8,8 @@ import es.ieslavereda.miravereda.R;
 
 public class DetailsActivity extends AppCompatActivity {
 
+    private Button
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
